@@ -7,7 +7,6 @@ import {
   Keyboard,
   TouchableWithoutFeedback,
   TouchableOpacity,
-  ScrollView,
 } from "react-native";
 
 import Table from "./Table";
@@ -43,6 +42,7 @@ export default function App() {
     }
 
     setTable(arrRow);
+    Keyboard.dismiss();
   };
 
   const addRow = () => {
